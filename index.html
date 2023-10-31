@@ -166,18 +166,35 @@
       <div class="flex flex-col max-w-screen-2xl gap-10">
         <h2 class="text-5xl text-stone-50">Projects</h2>
 
-        <!-- Slider main container -->
         <div class="max-w-4xl swiper">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="flex flex-col swiper-slide bg-zinc-800">
-              <h3>Project Name</h3>
-              <img class="w-full h-full" height="600" width="600" src="/images/projects/webstudio.png" alt="" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
-                cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
-              </p>
+            <div class="flex flex-col swiper-slide">
+              <h3 class="text-4xl text-center p-5">WebStudio</h3>
+              <div class="flex flex-col justify-center gap-10 bg-zinc-800 pb-10 rounded-lg shadow-lg shadow-zinc-950/50">
+                <img class="w-full h-full" height="600" width="600" src="/images/projects/webstudio.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
+                  cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
+                </p>
+
+                <button
+                  type="button"
+                  class="self-center flex justify-center items-center w-[200px] h-[100px] bg-indigo-500 shadow-lg shadow-indigo-500/50 rounded-md text-zinc-50"
+                >
+                  Website
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 ml-2"
+                  >
+                    <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="flex flex-col swiper-slide bg-zinc-800">
               <h3>Project Name</h3>
@@ -186,6 +203,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
                 cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
               </p>
+              <a href="https://peterpoterek.github.io/goit-icecream-copy/"></a>
             </div>
             <div class="flex flex-col swiper-slide bg-zinc-800">
               <h3>Project Name</h3>
@@ -194,18 +212,11 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
                 cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
               </p>
+              <a href="https://technologiawykonaniawnetrz.pl/"></a>
             </div>
-
-            ...
           </div>
-          <!-- If we need pagination -->
+
           <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>
         </div>
       </div>

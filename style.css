@@ -7,7 +7,7 @@
     box-shadow: 0 0 0 0 transparent;
   }
   50% {
-    box-shadow: 8px 8px 51px -23px rgba(129, 140, 248, 1);
+    box-shadow: 8px 8px 51px -23px #818cf8;
   }
   100% {
     box-shadow: 0 0 0 0 transparent;
@@ -16,4 +16,18 @@
 
 .animate-pulse-outline {
   animation: pulse-outline 5s ease-in-out infinite;
+}
+
+.swiper-pagination-bullet {
+  background-color: #09090b;
+
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #818cf8;
+
+  width: 16px;
+  height: 16px;
 }
