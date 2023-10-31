@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="modern-normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +16,7 @@
   </head>
   <body class="font-sans bg-zinc-900 text-stone-300">
     <nav class="flex justify-center">
-      <div class="max-w-screen-2x flex justify-between items-center gap-x-[35rem] p-10 border-b border-stone-100">
+      <div class="max-w-screen-2xl flex justify-between items-center gap-x-[35rem] p-10 border-b border-stone-100">
         <div>
           <a class="text-4xl font-bold" href="">Peter Poterek</a>
         </div>
@@ -49,7 +50,7 @@
     </nav>
 
     <section class="flex justify-center pt-[7rem] pb-[15rem]">
-      <div class="max-w-screen-2x flex justify-center flex-col gap-2">
+      <div class="max-w-screen-2xl flex justify-center flex-col gap-2">
         <h1 class="text-center text-6xl">Hello!👋</h1>
         <h2 class="text-center text-7xl">I'm <strong class="font-bold">Peter</strong></h2>
         <h2 class="text-center text-7xl max-w-3xl">Self-taught <strong class="text-indigo-400">Front-end</strong> Developer</h2>
@@ -60,7 +61,7 @@
     </section>
 
     <section class="flex justify-center pb-[15rem]">
-      <div class="flex flex-col justify-center max-w-screen-2x gap-10">
+      <div class="flex flex-col justify-center max-w-screen-2xl gap-10">
         <h2 class="text-5xl text-stone-50">About</h2>
         <p class="text-2xl max-w-4xl">
           Hi, I'm Peter, a self-taught <strong class="text-indigo-600">Front-end</strong> Developer based in Cracow, Poland. I've been on a journey of
@@ -68,8 +69,9 @@
         </p>
       </div>
     </section>
-    <section class="flex justify-center">
-      <div class="flex flex-col justify-center max-w-screen-2x gap-10">
+
+    <section class="flex justify-center pb-[15rem]">
+      <div class="flex flex-col justify-center max-w-screen-2xl gap-10">
         <h2 class="text-5xl text-stone-50">Skills</h2>
 
         <div class="flex gap-[3rem] max-w-4xl bg-zinc-800 p-10 rounded-lg shadow-lg shadow-zinc-950/50">
@@ -159,15 +161,56 @@
         </div>
       </div>
     </section>
+
     <section class="flex justify-center">
-      <div class="max-w-screen-2x gap-10">
+      <div class="flex flex-col max-w-screen-2xl gap-10">
         <h2 class="text-5xl text-stone-50">Projects</h2>
 
-        <div>
-          <h3>WebStudio</h3>
-          <img src="" alt="" />
+        <!-- Slider main container -->
+        <div class="max-w-4xl swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="flex flex-col swiper-slide bg-zinc-800">
+              <h3>Project Name</h3>
+              <img class="w-full h-full" height="600" width="600" src="/images/projects/webstudio.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
+                cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
+              </p>
+            </div>
+            <div class="flex flex-col swiper-slide bg-zinc-800">
+              <h3>Project Name</h3>
+              <img class="w-full h-full" height="600" width="600" src="/images/projects/icecream.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
+                cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
+              </p>
+            </div>
+            <div class="flex flex-col swiper-slide bg-zinc-800">
+              <h3>Project Name</h3>
+              <img class="w-full h-full" height="600" width="600" src="/images/projects/tww.png" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque accusamus sunt at molestiae recusandae quod! Consectetur
+                cum laudantium culpa, placeat expedita reprehenderit minus repudiandae. Ullam consequuntur dolorem repudiandae nostrum!
+              </p>
+            </div>
+
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
