@@ -27,8 +27,18 @@
             </svg>
             <a
               class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="#"
+              href="#about"
               >About</a
+            >
+          </li>
+          <li class="flex gap-1.5 items-center">
+            <svg class="w-6 h-6 fill-current text-indigo-400">
+              <use href="/icons.svg#icon-project"></use>
+            </svg>
+            <a
+              class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+              href="#projects"
+              >Projects</a
             >
           </li>
           <li class="flex gap-1.5 items-center">
@@ -37,7 +47,7 @@
             </svg>
             <a
               class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="#"
+              href="#contact"
               >Contact</a
             >
           </li>
@@ -47,7 +57,8 @@
             </svg>
             <a
               class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="#"
+              href="https://github.com/PeterPoterek"
+              target="_blank"
               >Github</a
             >
           </li>
@@ -67,7 +78,7 @@
         </div>
       </section>
 
-      <section class="flex justify-center pb-[15rem]">
+      <section id="about" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col justify-center max-w-screen-2xl gap-10">
           <h2 class="text-5xl text-stone-50">About</h2>
           <p class="text-2xl max-w-4xl">
@@ -77,7 +88,7 @@
         </div>
       </section>
 
-      <section class="flex justify-center pb-[15rem]">
+      <section id="skills" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col justify-center max-w-screen-2xl gap-10">
           <h2 class="text-5xl text-stone-50">Skills</h2>
 
@@ -169,7 +180,7 @@
         </div>
       </section>
 
-      <section class="flex justify-center pb-[15rem]">
+      <section id="projects" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col max-w-screen-2xl gap-10">
           <h2 class="text-5xl text-stone-50">Projects</h2>
 
@@ -325,7 +336,7 @@
         </div>
       </section>
 
-      <section class="flex justify-center pb-[15rem]">
+      <section id="contact" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col max-w-4xl gap-10">
           <h2 class="text-5xl text-stone-50">Contact</h2>
           <ul class="flex flex-wrap gap-10 justify-between">
@@ -333,30 +344,50 @@
               <svg class="w-10 h-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-email"></use>
               </svg>
-              <a href="mailto:peterpoterek0@gmail.com" class="text-4xl">peterpoterek0@gmail.com</a>
+              <a
+                href="mailto:peterpoterek0@gmail.com"
+                class="text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                >peterpoterek0@gmail.com</a
+              >
             </div>
             <div class="flex items-center gap-5">
               <svg class="w-10 h-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-github"></use>
               </svg>
-              <a href="https://github.com/PeterPoterek" target="_blank" class="text-4xl">PeterPoterek</a>
+              <a
+                href="https://github.com/PeterPoterek"
+                target="_blank"
+                class="text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                >PeterPoterek</a
+              >
             </div>
             <div class="flex items-center gap-5">
               <svg class="w-10 h-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-linkedin"></use>
               </svg>
-              <a href="https://www.linkedin.com/in/piotr-poterek/" target="_blank" class="text-4xl">Piotr Poterek</a>
+              <a
+                href="https://www.linkedin.com/in/piotr-poterek/"
+                target="_blank"
+                class="text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                >Piotr Poterek</a
+              >
             </div>
             <div class="flex items-center gap-5">
               <svg class="w-10 h-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-discord"></use>
               </svg>
-              <a class="text-4xl">living_failure</a>
+              <a
+                class="text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                >living_failure</a
+              >
             </div>
           </ul>
         </div>
       </section>
     </main>
+
+    <footer class="flex justify-center"><h4>© 2023 Piotr Poterek</h4></footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/script.js"></script>
   </body>
