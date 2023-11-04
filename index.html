@@ -15,12 +15,12 @@
     <title>Vite App</title>
   </head>
   <body class="font-sans bg-zinc-900 text-stone-300">
-    <nav class="flex justify-center">
-      <div class="max-w-screen-2xl flex justify-between items-center xl:gap-x-[35rem] p-10 border-b border-stone-100">
+    <nav class="sticky top-0 bg-zinc-900 flex justify-center">
+      <div class="max-w-screen-2xl flex justify-between items-center gap-5 xl:gap-x-[35rem] p-5 md:p-10 border-b border-stone-100">
         <div>
           <a class="text-4xl font-bold" href="">Peter Poterek</a>
         </div>
-        <menu class="flex gap-10 text-2xl">
+        <menu class="hidden lg:flex gap-10 text-2xl">
           <li class="flex gap-1.5 items-center">
             <svg class="w-6 h-6 fill-current text-indigo-400">
               <use href="/icons.svg#icon-person"></use>
@@ -63,7 +63,13 @@
             >
           </li>
         </menu>
+        <div class="lg:hidden">
+          <svg class="w-16 h-16 fill-current text-indigo-400">
+            <use href="/icons.svg#icon-hamburger"></use>
+          </svg>
+        </div>
       </div>
+      <div class="fixed top-0 left-0 w-full h-full bg-zinc-900 z-10"><h1>Test</h1></div>
     </nav>
 
     <main>
@@ -88,7 +94,7 @@
         </div>
       </section>
 
-      <section id="skills" class="flex justify-center pb-[15rem]">
+      <!-- <section id="skills" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col justify-center max-w-screen-2xl gap-10">
           <h2 class="text-5xl text-stone-50">Skills</h2>
 
@@ -178,8 +184,8 @@
             </div>
           </div>
         </div>
-      </section>
-
+      </section> -->
+      <!-- 
       <section id="projects" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col max-w-screen-2xl gap-10">
           <h2 class="text-5xl text-stone-50">Projects</h2>
@@ -334,9 +340,9 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section id="contact" class="flex justify-center pb-[15rem]">
+      <!-- <section id="contact" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col max-w-4xl gap-10">
           <h2 class="text-5xl text-stone-50">Contact</h2>
           <ul class="flex flex-wrap gap-10 justify-between">
@@ -383,7 +389,7 @@
             </div>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <footer class="flex justify-center"><h4>© 2023 Piotr Poterek</h4></footer>
