@@ -64,16 +64,20 @@
           </li>
         </menu>
         <div class="lg:hidden">
-          <svg class="w-16 h-16 fill-current text-indigo-400">
-            <use href="/icons.svg#icon-hamburger"></use>
-          </svg>
+          <button id="mobile-open" type="button">
+            <svg class="w-16 h-16 fill-current text-indigo-400">
+              <use href="/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
         </div>
       </div>
-      <!-- about,projects,,contact,github -->
 
-      <div class="fixed top-0 left-0 w-full h-full bg-zinc-900 z-10 p-10 flex justify-center items-center">
+      <div
+        id="mobile-menu"
+        class="fixed top-0 left-0 w-full h-full bg-zinc-900 z-10 p-10 flex justify-center items-center transform translate-x-full transition-transform duration-250 ease-in-out"
+      >
         <div class="absolute top-0 right-0">
-          <button type="button">
+          <button id="mobile-close" type="button">
             <svg class="w-10 h-10 fill-current text-indigo-400 m-10">
               <use href="/icons.svg#icon-cross"></use>
             </svg>

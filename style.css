@@ -31,3 +31,6 @@
   width: 16px;
   height: 16px;
 }
+#mobile-menu.is-open {
+  transform: translateX(0);
+}
