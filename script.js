@@ -27,13 +27,16 @@ const swiper = new Swiper(".swiper", {
   const openMenuBtn = document.querySelector("#mobile-open");
   const closeMenuBtn = document.querySelector("#mobile-close");
 
-  console.log(mobileMenu, openMenuBtn, closeMenuBtn);
-
   const toggleMenu = () => {
-    console.log("test");
     const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
     mobileMenu.classList.toggle("is-open");
+
+    if (isMenuOpen) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   };
 
   openMenuBtn.addEventListener("click", toggleMenu);
@@ -43,5 +46,7 @@ const swiper = new Swiper(".swiper", {
     if (!e.matches) return;
     mobileMenu.classList.remove("is-open");
     openMenuBtn.setAttribute("aria-expanded", false);
+
+    document.body.style.overflow = "auto";
   });
 })();
