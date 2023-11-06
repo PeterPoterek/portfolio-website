@@ -15,7 +15,7 @@
     <title>Vite App</title>
   </head>
   <body class="font-sans bg-zinc-900 text-stone-300">
-    <nav class="sticky top-0 lg:static bg-zinc-900 flex justify-center">
+    <nav class="sticky top-0 lg:static bg-zinc-900 flex justify-center z-50">
       <div
         class="max-w-screen-2xl flex justify-between items-center gap-[3rem] sm:gap-[20rem] lg:gap-[15rem] 2xl:gap-x-[35rem] p-5 md:p-10 border-b border-stone-100"
       >
@@ -127,13 +127,13 @@
       </section>
 
       <section id="skills" class="flex justify-center pb-[15rem]">
-        <div class="flex flex-col justify-center max-w-screen-2xl gap-10">
+        <div class="flex flex-col justify-center max-w-4xl gap-10">
           <h2 class="text-4xl text-center sm:text-left lg:text-5xl text-stone-50">Skills</h2>
 
           <div class="flex flex-col lg:flex-row gap-[3rem] max-w-4xl bg-zinc-800 p-5 lg:p-10 rounded-lg shadow-lg shadow-zinc-950/50">
             <div class="lg:border-r lg:border-stone-100">
               <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">Technologies I Know</h3>
-              <ul class="grid grid-cols-2 gap-x-2 gap-y-5 lg:gap-x-5 lg:gap-y-10">
+              <ul class="grid grid-cols-2 gap-x-2 gap-y-5 lg:gap-x-[6rem] lg:gap-y-10">
                 <li class="flex items-center gap-2 lg:gap-5">
                   <svg width="50" height="50">
                     <use href="/images/logos/technologies.svg#icon-html"></use>
@@ -219,17 +219,17 @@
         </div>
       </section>
 
-      <!-- <section id="projects" class="flex justify-center pb-[15rem]">
+      <section id="projects" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col max-w-screen-2xl gap-10">
-          <h2 class="text-5xl text-stone-50">Projects</h2>
+          <h2 class="text-4xl text-center sm:text-left lg:text-5xl text-stone-50">Projects</h2>
 
-          <div class="max-w-4xl swiper">
+          <div class="max-w-xs lg:max-w-4xl swiper">
             <div class="swiper-wrapper">
               <div class="flex flex-col swiper-slide">
-                <h3 class="text-4xl text-stone-50 text-center p-5">WebStudio</h3>
-                <div class="flex flex-col justify-center gap-10 bg-zinc-800 pb-[3rem] rounded-lg shadow-lg shadow-zinc-950/50">
-                  <img class="w-full h-full" height="600" width="600" src="/images/projects/webstudio.png" alt="" />
-                  <div class="flex flex-col gap-[2rem] p-5">
+                <h3 class="text-2xl lg:text-4xl text-stone-50 text-center p-5">WebStudio</h3>
+                <div class="flex flex-col justify-center gap-10 bg-zinc-800 pb-[3rem] p-5 rounded-lg">
+                  <img class="w-full h-full" src="/images/projects/webstudio.png" alt="" />
+                  <div class="flex flex-col gap-[2rem]">
                     <p class="">A solo project, mobile first responsive website during my fullstack course,its a moblie-first responsive website.</p>
 
                     <h4 class="text-3xl text-stone-50">Technologies Used:</h4>
@@ -373,7 +373,7 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section id="contact" class="flex justify-center pb-[15rem]">
         <div class="flex flex-col max-w-4xl gap-10">
