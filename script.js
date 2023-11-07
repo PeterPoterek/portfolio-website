@@ -26,6 +26,7 @@ const swiper = new Swiper(".swiper", {
   const mobileMenu = document.querySelector("#mobile-menu");
   const openMenuBtn = document.querySelector("#mobile-open");
   const closeMenuBtn = document.querySelector("#mobile-close");
+  const mobileMenuLinks = document.querySelectorAll("#mobile-menu a");
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
@@ -39,8 +40,18 @@ const swiper = new Swiper(".swiper", {
     }
   };
 
+  const closeMoblieMenu = () => {
+    mobileMenu.classList.remove("is-open");
+    openMenuBtn.setAttribute("aria-expanded", false);
+    document.body.style.overflow = "auto";
+  };
+
   openMenuBtn.addEventListener("click", toggleMenu);
   closeMenuBtn.addEventListener("click", toggleMenu);
+
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", closeMoblieMenu);
+  });
 
   window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
     if (!e.matches) return;
