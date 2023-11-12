@@ -15,92 +15,94 @@
     <title>Portfolio Website</title>
   </head>
   <body class="font-sans bg-zinc-900 text-stone-300">
-    <nav id="navbar" class="sticky top-0 lg:static bg-zinc-900 flex justify-center z-50">
-      <div
-        class="max-w-screen-2xl flex justify-between items-center gap-[3rem] sm:gap-[20rem] lg:gap-[15rem] 2xl:gap-x-[35rem] p-5 md:p-10 border-b border-stone-100"
-      >
-        <div>
-          <a class="text-2xl lg:text-3xl xl:text-4xl font-bold" href="#">Peter Poterek</a>
+    <header>
+      <nav id="navbar" class="sticky top-0 lg:static bg-zinc-900 flex justify-center z-50">
+        <div
+          class="max-w-screen-2xl flex justify-between items-center gap-[3rem] sm:gap-[20rem] lg:gap-[15rem] 2xl:gap-x-[35rem] p-5 md:p-10 border-b border-stone-100"
+        >
+          <div>
+            <a class="text-2xl lg:text-3xl xl:text-4xl font-bold" href="#">Peter Poterek</a>
+          </div>
+          <menu class="hidden lg:flex gap-10 text-2xl">
+            <li class="flex gap-1.5 items-center">
+              <svg class="w-6 h-6 fill-current text-indigo-400">
+                <use href="/icons.svg#icon-person"></use>
+              </svg>
+              <a
+                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="flex gap-1.5 items-center">
+              <svg class="w-6 h-6 fill-current text-indigo-400">
+                <use href="/icons.svg#icon-project"></use>
+              </svg>
+              <a
+                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="flex gap-1.5 items-center">
+              <svg class="w-6 h-6 fill-current text-indigo-400">
+                <use href="/icons.svg#icon-phone"></use>
+              </svg>
+              <a
+                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="flex gap-1.5 items-center">
+              <svg class="w-6 h-6 fill-current text-indigo-400">
+                <use href="/icons.svg#icon-github"></use>
+              </svg>
+              <a
+                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                href="https://github.com/PeterPoterek"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+          </menu>
+          <div class="lg:hidden">
+            <button id="mobile-open" type="button">
+              <svg class="w-16 h-16 fill-current text-indigo-400">
+                <use href="/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <menu class="hidden lg:flex gap-10 text-2xl">
-          <li class="flex gap-1.5 items-center">
-            <svg class="w-6 h-6 fill-current text-indigo-400">
-              <use href="/icons.svg#icon-person"></use>
-            </svg>
-            <a
-              class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="#about"
-              >About</a
-            >
-          </li>
-          <li class="flex gap-1.5 items-center">
-            <svg class="w-6 h-6 fill-current text-indigo-400">
-              <use href="/icons.svg#icon-project"></use>
-            </svg>
-            <a
-              class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="#projects"
-              >Projects</a
-            >
-          </li>
-          <li class="flex gap-1.5 items-center">
-            <svg class="w-6 h-6 fill-current text-indigo-400">
-              <use href="/icons.svg#icon-phone"></use>
-            </svg>
-            <a
-              class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="#contact"
-              >Contact</a
-            >
-          </li>
-          <li class="flex gap-1.5 items-center">
-            <svg class="w-6 h-6 fill-current text-indigo-400">
-              <use href="/icons.svg#icon-github"></use>
-            </svg>
-            <a
-              class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
-              href="https://github.com/PeterPoterek"
-              target="_blank"
-              >Github</a
-            >
-          </li>
-        </menu>
-        <div class="lg:hidden">
-          <button id="mobile-open" type="button">
-            <svg class="w-16 h-16 fill-current text-indigo-400">
-              <use href="/icons.svg#icon-hamburger"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
 
-      <div
-        id="mobile-menu"
-        class="fixed top-0 left-0 w-full h-full bg-zinc-900 z-10 p-10 flex justify-center items-center transform translate-x-full transition-transform duration-250 ease-in-out"
-      >
-        <div class="absolute top-0 right-0">
-          <button id="mobile-close" type="button">
-            <svg class="w-10 h-10 fill-current text-indigo-400 m-10">
-              <use href="/icons.svg#icon-cross"></use>
-            </svg>
-          </button>
+        <div
+          id="mobile-menu"
+          class="fixed top-0 left-0 w-full h-full bg-zinc-900 z-10 p-10 flex justify-center items-center transform translate-x-full transition-transform duration-250 ease-in-out"
+        >
+          <div class="absolute top-0 right-0">
+            <button id="mobile-close" type="button">
+              <svg class="w-10 h-10 fill-current text-indigo-400 m-10">
+                <use href="/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="flex flex-col justify-center items-center gap-[3rem]">
+            <li class="text-5xl hover:text-indigo-100">
+              <a href="#about">About</a>
+            </li>
+            <li class="text-5xl hover:text-indigo-100">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="text-5xl hover:text-indigo-100">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="text-5xl hover:text-indigo-100">
+              <a href="https://github.com/PeterPoterek" target="_blank">Github</a>
+            </li>
+          </ul>
         </div>
-        <ul class="flex flex-col justify-center items-center gap-[3rem]">
-          <li class="text-5xl hover:text-indigo-100">
-            <a href="#about">About</a>
-          </li>
-          <li class="text-5xl hover:text-indigo-100">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="text-5xl hover:text-indigo-100">
-            <a href="#contact">Contact</a>
-          </li>
-          <li class="text-5xl hover:text-indigo-100">
-            <a href="https://github.com/PeterPoterek" target="_blank">Github</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main>
       <section id="hero" class="flex justify-center pt-[2.5rem] sm:pt-[5rem] lg:pt-[7rem] pb-[10rem] md:pb-[15rem]">
