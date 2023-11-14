@@ -1,27 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="modern-normalize.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Portfolio Website</title>
   </head>
   <body class="font-sans bg-zinc-900 text-stone-300">
     <header>
-      <nav id="navbar" class="sticky top-0 lg:static bg-zinc-900 flex justify-center z-50">
+      <nav
+        id="navbar"
+        class="sticky top-0 lg:static bg-zinc-900 flex justify-center z-50"
+      >
         <div
           class="max-w-screen-2xl flex justify-between items-center gap-[3rem] sm:gap-[20rem] lg:gap-[15rem] 2xl:gap-x-[35rem] p-5 md:p-10 border-b border-stone-100"
         >
           <div>
-            <a class="text-2xl lg:text-3xl xl:text-4xl font-bold" href="#">Peter Poterek</a>
+            <a class="text-2xl lg:text-3xl xl:text-4xl font-bold" href="#"
+              >Peter Poterek</a
+            >
           </div>
           <menu class="hidden lg:flex gap-10 text-2xl">
             <li class="flex gap-1.5 items-center">
@@ -105,38 +116,57 @@
     </header>
 
     <main>
-      <section id="hero" class="flex justify-center pt-[2.5rem] sm:pt-[5rem] lg:pt-[7rem] pb-[10rem] md:pb-[15rem]">
+      <section
+        id="hero"
+        class="flex justify-center pt-[2.5rem] sm:pt-[5rem] lg:pt-[7rem] pb-[10rem] md:pb-[15rem]"
+      >
         <div class="max-w-md lg:max-w-screen-2xl flex justify-center flex-col gap-2">
           <h1 class="text-center text-2xl md:text-4xl lg:text-6xl">Hello!👋</h1>
-          <h2 class="text-center text-3xl md:text-5xl lg:text-7xl">I'm <strong class="font-bold">Peter</strong></h2>
+          <h2 class="text-center text-3xl md:text-5xl lg:text-7xl">
+            I'm <strong class="font-bold">Peter</strong>
+          </h2>
           <h2 class="text-center text-3xl md:text-5xl lg:text-7xl max-w-3xl">
             Self-taught <strong class="text-indigo-400">Front-end</strong> Developer
           </h2>
           <div class="pt-5 lg:pt-10 self-center rounded-full">
-            <div class="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-indigo-600 rounded-full animate-pulse-outline"></div>
+            <div
+              class="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-indigo-600 rounded-full animate-pulse-outline"
+            ></div>
           </div>
         </div>
       </section>
 
       <section id="about" class="flex justify-center pb-[5rem] md:pb-[15rem]">
-        <div class="flex flex-col justify-center max-w-md sm:max-w-2xl lg:max-w-4xl gap-10">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">About</h2>
-          <p class="text-base sm:text-2xl max-w-2xl text-center lg:text-left p-2 lg:max-w-4xl">
-            Hi, I'm Peter, a self-taught <strong class="text-indigo-600">Front-end</strong> Developer based in Cracow, Poland. I've been on a journey
-            of web development for the past few months, trying to improve and learn something new everyday 🚀
+        <div
+          class="flex flex-col justify-center max-w-md sm:max-w-2xl lg:max-w-4xl gap-10"
+        >
+          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+            About
+          </h2>
+          <p
+            class="text-base sm:text-2xl max-w-2xl text-center lg:text-left p-2 lg:max-w-4xl"
+          >
+            Hi, I'm Peter, a self-taught
+            <strong class="text-indigo-600">Front-end</strong> Developer based in Cracow,
+            Poland. I've been on a journey of web development for the past few months,
+            trying to improve and learn something new everyday 🚀
           </p>
         </div>
       </section>
 
       <section id="skills" class="flex justify-center pb-[5rem] md:pb-[15rem]">
         <div class="flex flex-col justify-center max-w-2xl lg:max-w-4xl gap-10">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">Skills</h2>
+          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+            Skills
+          </h2>
 
           <div
             class="flex flex-col md:flex-row lg:flex-row gap-[3rem] max-w-2xl lg:max-w-4xl bg-zinc-800 p-5 lg:p-10 rounded-lg shadow-lg shadow-zinc-950/50"
           >
             <div class="lg:border-r lg:border-stone-100">
-              <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">Technologies I Know</h3>
+              <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">
+                Technologies I Know
+              </h3>
               <ul class="grid grid-cols-2 gap-x-2 gap-y-5 lg:gap-x-[6rem] lg:gap-y-10">
                 <li class="flex items-center gap-2 lg:gap-5">
                   <svg width="50" height="50">
@@ -179,7 +209,9 @@
             </div>
 
             <div>
-              <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">Technologies I Want To Learn</h3>
+              <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">
+                Technologies I Want To Learn
+              </h3>
               <ul class="grid grid-cols-2 gap-x-2 gap-y-5 lg:gap-x-5 lg:gap-y-10">
                 <li class="flex items-center gap-2 lg:gap-5">
                   <svg width="50" height="50">
@@ -225,27 +257,52 @@
 
       <section id="projects" class="flex justify-center pb-[5rem] md:pb-[15rem]">
         <div class="flex flex-col max-w-screen-2xl gap-10 shadow-lg shadow-zinc-950/50">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">Projects</h2>
+          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+            Projects
+          </h2>
 
           <div class="w-screen lg:max-w-4xl swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl">
-                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">WebStudio</h3>
-                  <img class="border-solid border-[3px] border-slate-950" src="/images/projects/webstudio.png" alt="WebStudio Website" />
+                <div
+                  class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl"
+                >
+                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">
+                    WebStudio
+                  </h3>
+                  <img
+                    class="border-solid border-[3px] border-slate-950"
+                    src="/images/projects/webstudio.png"
+                    alt="WebStudio Website"
+                  />
                   <div class="flex flex-col gap-5 md:gap-2">
                     <p class="text-base text-center lg:text-xl lg:text-left p-5">
-                      A solo project, mobile first responsive website during my fullstack course,its a moblie-first responsive website.
+                      A solo project, mobile first responsive website during my fullstack
+                      course,its a moblie-first responsive website.
                     </p>
 
-                    <h4 class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5">Technologies Used:</h4>
-                    <div class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5">
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg">HTML</span>
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg">CSS</span>
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
+                    <h4
+                      class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5"
+                    >
+                      Technologies Used:
+                    </h4>
+                    <div
+                      class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5"
+                    >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
                         >JavaScript</span
                       >
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
                         >Mobile First</span
                       >
                     </div>
@@ -283,22 +340,45 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl">
-                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">IceCream Group project</h3>
-                  <img class="border-solid border-[3px] border-slate-950" src="/images/projects/icecream.png" alt="IceCream website" />
+                <div
+                  class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl"
+                >
+                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">
+                    IceCream Group project
+                  </h3>
+                  <img
+                    class="border-solid border-[3px] border-slate-950"
+                    src="/images/projects/icecream.png"
+                    alt="IceCream website"
+                  />
                   <div class="flex flex-col gap-5 md:gap-2">
                     <p class="text-base text-center lg:text-xl lg:text-left p-5">
-                      Group project with 1 week deadline, where I was assigned to be a Team leader.
+                      Group project with 1 week deadline, where I was assigned to be a
+                      Team leader.
                     </p>
 
-                    <h4 class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5">Technologies Used:</h4>
-                    <div class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5">
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg">HTML</span>
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg">CSS</span>
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
+                    <h4
+                      class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5"
+                    >
+                      Technologies Used:
+                    </h4>
+                    <div
+                      class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5"
+                    >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
                         >JavaScript</span
                       >
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
                         >Mobile First</span
                       >
                     </div>
@@ -336,22 +416,45 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl">
-                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">Family Business Website</h3>
-                  <img class="border-solid border-[3px] border-slate-950" src="/images/projects/tww.png" alt="Family Business Website" />
+                <div
+                  class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl"
+                >
+                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">
+                    Family Business Website
+                  </h3>
+                  <img
+                    class="border-solid border-[3px] border-slate-950"
+                    src="/images/projects/tww.png"
+                    alt="Family Business Website"
+                  />
                   <div class="flex flex-col gap-5 md:gap-2">
                     <p class="text-base text-center lg:text-xl lg:text-left p-5">
-                      Portfolio website I made for my family business, it showcases gallery with images.
+                      Portfolio website I made for my family business, it showcases
+                      gallery with images.
                     </p>
 
-                    <h4 class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5">Technologies Used:</h4>
-                    <div class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5">
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg">HTML</span>
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg">CSS</span>
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
+                    <h4
+                      class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5"
+                    >
+                      Technologies Used:
+                    </h4>
+                    <div
+                      class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5"
+                    >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg"
+                        >HTML</span
+                      >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg"
+                        >CSS</span
+                      >
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
                         >JavaScript</span
                       >
-                      <span class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
+                      <span
+                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
                         >Mobile First</span
                       >
                     </div>
@@ -398,8 +501,12 @@
 
       <section id="contact" class="flex justify-center pb-[5rem] md:pb-[15rem]">
         <div class="flex flex-col md:max-w-2xl lg:max-w-4xl gap-10">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">Contact</h2>
-          <ul class="flex flex-col justify-between md:flex-row flex-wrap gap-10 lg:justify-between">
+          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+            Contact
+          </h2>
+          <ul
+            class="flex flex-col justify-between md:flex-row flex-wrap gap-10 lg:justify-between"
+          >
             <div class="flex items-center gap-5 md:gap-2">
               <svg class="w-10 h-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-email"></use>
