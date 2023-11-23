@@ -1,6 +1,11 @@
 import Swiper from "swiper";
 import "swiper/css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+//#region Swiper
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -24,7 +29,9 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+//#endregion
 
+//#region Mobile Menu
 (() => {
   const mobileMenu = document.querySelector("#mobile-menu");
   const openMenuBtn = document.querySelector("#mobile-open");
@@ -64,3 +71,9 @@ const swiper = new Swiper(".swiper", {
     document.body.style.overflow = "auto";
   });
 })();
+//#endregion
+
+//#region AOS
+AOS.init();
+console.log(AOS);
+//#endregion
