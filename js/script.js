@@ -4,6 +4,8 @@ import "swiper/css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import PanelSnap from "panelsnap";
+
 //#region Swiper
 
 const swiper = new Swiper(".swiper", {
@@ -77,3 +79,18 @@ const swiper = new Swiper(".swiper", {
 AOS.init();
 console.log(AOS);
 //#endregion
+
+const mainContainer = document.querySelector("#mainContainer");
+const options = {
+  container: mainContainer,
+  panelSelector: "section",
+  directionThreshold: 50,
+  delay: 0,
+  duration: 3000,
+  easing: function (t) {
+    return t;
+  },
+};
+document.addEventListener("DOMContentLoaded", function () {
+  new PanelSnap(options);
+});
