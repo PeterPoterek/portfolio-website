@@ -77,9 +77,9 @@ const swiper = new Swiper(".swiper", {
 
 //#region AOS
 AOS.init();
-console.log(AOS);
 //#endregion
 
+//#region panelsnap
 const mainContainer = document.querySelector("#mainContainer");
 const options = {
   container: mainContainer,
@@ -93,4 +93,37 @@ const options = {
 };
 document.addEventListener("DOMContentLoaded", function () {
   new PanelSnap(options);
+});
+//#endregion
+
+document.addEventListener("DOMContentLoaded", function () {
+  new FinisherHeader({
+    count: 100,
+    size: {
+      min: 2,
+      max: 23,
+      pulse: 0,
+    },
+    speed: {
+      x: {
+        min: 0,
+        max: 0.4,
+      },
+      y: {
+        min: 0,
+        max: 0.5,
+      },
+    },
+    colors: {
+      background: "#18181b",
+      particles: ["#4f46e5", "#7e22ce", "#ec4899"],
+    },
+    blending: "overlay",
+    opacity: {
+      center: 1,
+      edge: 0,
+    },
+    skew: -2,
+    shapes: ["c"],
+  });
 });
