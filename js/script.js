@@ -130,6 +130,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //#endregion
 
+//#region scollToTop
+const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+const about = document.querySelector("#about");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= about.offsetTop) {
+    scrollToTopBtn.classList.remove("hidden");
+    scrollToTopBtn.classList.add("opacity-100");
+  } else {
+    scrollToTopBtn.classList.remove("opacity-100");
+    scrollToTopBtn.classList.add("hidden");
+  }
+});
+//#endregion
+
 console.log(`
  /\\_/\\
 ( o.o )  meow
