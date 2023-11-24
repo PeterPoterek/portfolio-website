@@ -6,6 +6,8 @@ import "aos/dist/aos.css";
 
 import PanelSnap from "panelsnap";
 
+import "animate.css";
+
 //#region Swiper
 
 const swiper = new Swiper(".swiper", {
