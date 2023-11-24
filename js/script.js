@@ -96,12 +96,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //#endregion
 
+//#region background particles
 document.addEventListener("DOMContentLoaded", function () {
   new FinisherHeader({
     count: 100,
     size: {
       min: 2,
-      max: 23,
+      max: 15,
       pulse: 0,
     },
     speed: {
@@ -127,3 +128,10 @@ document.addEventListener("DOMContentLoaded", function () {
     shapes: ["c"],
   });
 });
+//#endregion
+
+console.log(`
+ /\\_/\\
+( o.o )  meow
+ > ^ <
+`);
