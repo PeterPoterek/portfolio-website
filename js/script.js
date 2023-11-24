@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     colors: {
       background: "#18181b",
-      particles: ["#4f46e5", "#7e22ce", "#ec4899"],
+      particles: ["#4f46e5", "#818cf8", "#3730a3"],
     },
     blending: "overlay",
     opacity: {
