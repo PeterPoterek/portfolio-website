@@ -16,57 +16,57 @@
 
     <title>Portfolio Website</title>
   </head>
-  <body class="font-sans bg-zinc-900 text-stone-300">
+  <body class="bg-zinc-900 font-sans text-stone-300">
     <header>
       <nav
         id="navbar"
-        class="sticky top-0 lg:static bg-zinc-900 flex justify-center z-50"
+        class="sticky top-0 z-50 flex justify-center bg-zinc-900 lg:static"
       >
         <div
-          class="max-w-screen-2xl flex justify-between items-center gap-[3rem] sm:gap-[20rem] lg:gap-[15rem] 2xl:gap-x-[35rem] p-5 md:p-10 border-b border-stone-100"
+          class="flex max-w-screen-2xl items-center justify-between gap-[3rem] border-b border-stone-100 p-5 sm:gap-[20rem] md:p-10 lg:gap-[15rem] 2xl:gap-x-[35rem]"
         >
           <div>
-            <a class="text-2xl lg:text-3xl xl:text-4xl font-bold" href="#"
+            <a class="text-2xl font-bold lg:text-3xl xl:text-4xl" href="#"
               >Peter Poterek</a
             >
           </div>
-          <menu class="hidden lg:flex gap-10 text-2xl">
-            <li class="flex gap-1.5 items-center">
-              <svg class="w-6 h-6 fill-current text-indigo-400">
+          <menu class="hidden gap-10 text-2xl lg:flex">
+            <li class="flex items-center gap-1.5">
+              <svg class="h-6 w-6 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-person"></use>
               </svg>
               <a
-                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="relative overflow-hidden border-b-2 border-transparent text-stone-100 transition duration-300 after:absolute after:bottom-0 after:right-full after:h-[2.5px] after:w-full after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full"
                 href="#about"
                 >About</a
               >
             </li>
-            <li class="flex gap-1.5 items-center">
-              <svg class="w-6 h-6 fill-current text-indigo-400">
+            <li class="flex items-center gap-1.5">
+              <svg class="h-6 w-6 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-project"></use>
               </svg>
               <a
-                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="relative overflow-hidden border-b-2 border-transparent text-stone-100 transition duration-300 after:absolute after:bottom-0 after:right-full after:h-[2.5px] after:w-full after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full"
                 href="#projects"
                 >Projects</a
               >
             </li>
-            <li class="flex gap-1.5 items-center">
-              <svg class="w-6 h-6 fill-current text-indigo-400">
+            <li class="flex items-center gap-1.5">
+              <svg class="h-6 w-6 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-phone"></use>
               </svg>
               <a
-                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="relative overflow-hidden border-b-2 border-transparent text-stone-100 transition duration-300 after:absolute after:bottom-0 after:right-full after:h-[2.5px] after:w-full after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full"
                 href="#contact"
                 >Contact</a
               >
             </li>
-            <li class="flex gap-1.5 items-center">
-              <svg class="w-6 h-6 fill-current text-indigo-400">
+            <li class="flex items-center gap-1.5">
+              <svg class="h-6 w-6 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-github"></use>
               </svg>
               <a
-                class="text-stone-100 border-b-2 border-transparent relative overflow-hidden after:h-[2.5px] after:w-full after:bottom-0 after:right-full after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="relative overflow-hidden border-b-2 border-transparent text-stone-100 transition duration-300 after:absolute after:bottom-0 after:right-full after:h-[2.5px] after:w-full after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full"
                 href="https://github.com/PeterPoterek"
                 target="_blank"
                 >Github</a
@@ -75,7 +75,7 @@
           </menu>
           <div class="lg:hidden">
             <button id="mobile-open" type="button">
-              <svg class="w-16 h-16 fill-current text-indigo-400">
+              <svg class="h-16 w-16 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-hamburger"></use>
               </svg>
             </button>
@@ -84,16 +84,16 @@
 
         <div
           id="mobile-menu"
-          class="fixed top-0 left-0 w-full h-full bg-zinc-900 z-10 p-10 flex justify-center items-center transform translate-x-full transition-transform duration-250 ease-in-out"
+          class="duration-250 fixed left-0 top-0 z-10 flex h-full w-full translate-x-full transform items-center justify-center bg-zinc-900 p-10 transition-transform ease-in-out"
         >
-          <div class="absolute top-0 right-0">
+          <div class="absolute right-0 top-0">
             <button id="mobile-close" type="button">
-              <svg class="w-10 h-10 fill-current text-indigo-400 m-10">
+              <svg class="m-10 h-10 w-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-cross"></use>
               </svg>
             </button>
           </div>
-          <ul class="flex flex-col justify-center items-center gap-[3rem]">
+          <ul class="flex flex-col items-center justify-center gap-[3rem]">
             <li class="text-5xl hover:text-indigo-100">
               <a href="#about">About</a>
             </li>
@@ -114,19 +114,19 @@
     <main class="finisher-header" id="mainContainer ">
       <section
         id="hero"
-        class="animate__animated animate__fadeIn animate__slow custom-fade-in flex justify-center pt-[2.5rem] sm:pt-[5rem] lg:pt-[7rem] pb-[10rem] md:pb-[15rem]"
+        class="animate__animated animate__fadeIn animate__slow custom-fade-in flex justify-center pb-[10rem] pt-[2.5rem] sm:pt-[5rem] md:pb-[15rem] lg:pt-[7rem]"
       >
-        <div class="max-w-md lg:max-w-screen-2xl flex justify-center flex-col gap-2">
+        <div class="flex max-w-md flex-col justify-center gap-2 lg:max-w-screen-2xl">
           <h1 class="text-center text-2xl md:text-4xl lg:text-6xl">Hello!👋</h1>
           <h2 class="text-center text-3xl md:text-5xl lg:text-7xl">
             I'm <strong class="font-bold">Peter</strong>
           </h2>
-          <h2 class="text-center text-3xl md:text-5xl lg:text-7xl max-w-3xl">
+          <h2 class="max-w-3xl text-center text-3xl md:text-5xl lg:text-7xl">
             Self-taught <strong class="text-indigo-400">Front-end</strong> Developer
           </h2>
-          <div class="pt-5 lg:pt-10 self-center rounded-full">
+          <div class="self-center rounded-full pt-5 lg:pt-10">
             <img
-              class="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] bg-indigo-600 rounded-full animate-pulse-outline"
+              class="animate-pulse-outline h-[200px] w-[200px] rounded-full bg-indigo-600 lg:h-[300px] lg:w-[300px]"
               src="./images/heroimage.png"
               alt="Hero Image"
             />
@@ -140,13 +140,13 @@
         class="flex justify-center pb-[5rem] md:pb-[15rem]"
       >
         <div
-          class="flex flex-col justify-center max-w-md sm:max-w-2xl lg:max-w-4xl gap-10"
+          class="flex max-w-md flex-col justify-center gap-10 sm:max-w-2xl lg:max-w-4xl"
         >
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+          <h2 class="text-center text-3xl text-stone-50 lg:text-left lg:text-5xl">
             About 📖
           </h2>
           <p
-            class="text-base sm:text-2xl max-w-2xl text-center lg:text-left p-2 lg:max-w-4xl"
+            class="max-w-2xl p-2 text-center text-base sm:text-2xl lg:max-w-4xl lg:text-left"
           >
             Hi, I'm Peter, a self-taught
             <strong class="text-indigo-600">Front-end</strong> Developer based in Cracow,
@@ -161,16 +161,16 @@
         id="skills"
         class="flex justify-center pb-[5rem] md:pb-[15rem]"
       >
-        <div class="flex flex-col justify-center max-w-2xl lg:max-w-4xl gap-10">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+        <div class="flex max-w-2xl flex-col justify-center gap-10 lg:max-w-4xl">
+          <h2 class="text-center text-3xl text-stone-50 lg:text-left lg:text-5xl">
             Techstack 🧰
           </h2>
 
           <div
-            class="flex flex-col md:flex-row lg:flex-row gap-[3rem] max-w-2xl lg:max-w-4xl bg-zinc-800 p-5 lg:p-10 rounded-lg shadow-lg shadow-zinc-950/50"
+            class="flex max-w-2xl flex-col gap-[3rem] rounded-lg bg-zinc-800 p-5 shadow-lg shadow-zinc-950/50 md:flex-row lg:max-w-4xl lg:flex-row lg:p-10"
           >
             <div class="lg:border-r lg:border-stone-100">
-              <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">
+              <h3 class="pb-10 text-center text-xl lg:text-left lg:text-2xl">
                 Technologies I Know
               </h3>
               <ul class="grid grid-cols-2 gap-x-2 gap-y-5 lg:gap-x-[6rem] lg:gap-y-10">
@@ -215,7 +215,7 @@
             </div>
 
             <div>
-              <h3 class="text-xl lg:text-2xl text-center lg:text-left pb-10">
+              <h3 class="pb-10 text-center text-xl lg:text-left lg:text-2xl">
                 Technologies I Want To Learn
               </h3>
               <ul class="grid grid-cols-2 gap-x-2 gap-y-5 lg:gap-x-5 lg:gap-y-10">
@@ -266,53 +266,53 @@
         id="projects"
         class="flex justify-center pb-[5rem] md:pb-[15rem]"
       >
-        <div class="flex flex-col max-w-screen-2xl gap-10 shadow-lg shadow-zinc-950/50">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+        <div class="flex max-w-screen-2xl flex-col gap-10 shadow-lg shadow-zinc-950/50">
+          <h2 class="text-center text-3xl text-stone-50 lg:text-left lg:text-5xl">
             Projects 📂
           </h2>
 
-          <div class="w-screen lg:max-w-4xl swiper">
+          <div class="swiper w-screen lg:max-w-4xl">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
-                  class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl"
+                  class="flex h-full w-full flex-col gap-5 rounded-xl bg-zinc-800 pb-[3rem]"
                 >
-                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">
+                  <h3 class="pt-5 text-center text-2xl text-stone-50 lg:text-4xl">
                     WebStudio
                   </h3>
                   <img
-                    class="border-solid border-[3px] border-slate-950"
+                    class="border-[3px] border-solid border-slate-950"
                     src="/images/projects/webstudio.png"
                     alt="WebStudio Website"
                   />
                   <div class="flex flex-col gap-5 md:gap-2">
-                    <p class="text-base text-center lg:text-xl lg:text-left p-5">
+                    <p class="p-5 text-center text-base lg:text-left lg:text-xl">
                       A solo project, mobile first responsive website during my fullstack
                       course,its a moblie-first responsive website.
                     </p>
 
                     <h4
-                      class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5"
+                      class="text-center text-2xl text-stone-50 lg:p-5 lg:text-left lg:text-3xl"
                     >
                       Technologies Used:
                     </h4>
                     <div
-                      class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5"
+                      class="flex items-center justify-center gap-2 lg:items-start lg:justify-start lg:gap-5 lg:p-5"
                     >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg"
+                        class="rounded-lg bg-red-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >HTML</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg"
+                        class="rounded-lg bg-sky-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >CSS</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
+                        class="rounded-lg bg-amber-300 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >JavaScript</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
+                        class="rounded-lg bg-purple-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >Mobile First</span
                       >
                     </div>
@@ -321,7 +321,7 @@
                     <a
                       href="https://peterpoterek.github.io/goit-webstudio/"
                       target="_blank"
-                      class="self-center flex justify-center items-center w-[200px] h-[50px] bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/50 rounded-md cursor-pointer transform transition-transform hover:translate-y-[-5px] hover:scale-105"
+                      class="flex h-[50px] w-[200px] transform cursor-pointer items-center justify-center self-center rounded-md bg-indigo-500 text-white shadow-lg shadow-indigo-500/50 transition-transform hover:translate-y-[-5px] hover:scale-105 hover:bg-indigo-400"
                     >
                       Website
                       <svg
@@ -331,7 +331,7 @@
                         stroke-linejoin="round"
                         stroke-width="2"
                         viewBox="0 0 24 24"
-                        class="w-6 h-6 ml-2"
+                        class="ml-2 h-6 w-6"
                       >
                         <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                       </svg>
@@ -339,10 +339,10 @@
                     <a
                       href="https://github.com/PeterPoterek/goit-webstudio"
                       target="_blank"
-                      class="self-center flex justify-center items-center w-[200px] h-[50px] bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/50 rounded-md cursor-pointer transform transition-transform hover:translate-y-[-5px] hover:scale-105"
+                      class="flex h-[50px] w-[200px] transform cursor-pointer items-center justify-center self-center rounded-md bg-indigo-500 text-white shadow-lg shadow-indigo-500/50 transition-transform hover:translate-y-[-5px] hover:scale-105 hover:bg-indigo-400"
                     >
                       Github
-                      <svg class="w-6 h-6 ml-2 fill-current">
+                      <svg class="ml-2 h-6 w-6 fill-current">
                         <use href="/icons.svg#icon-github"></use>
                       </svg>
                     </a>
@@ -351,44 +351,44 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl"
+                  class="flex h-full w-full flex-col gap-5 rounded-xl bg-zinc-800 pb-[3rem]"
                 >
-                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">
+                  <h3 class="pt-5 text-center text-2xl text-stone-50 lg:text-4xl">
                     IceCream Group project
                   </h3>
                   <img
-                    class="border-solid border-[3px] border-slate-950"
+                    class="border-[3px] border-solid border-slate-950"
                     src="/images/projects/icecream.png"
                     alt="IceCream website"
                   />
                   <div class="flex flex-col gap-5 md:gap-2">
-                    <p class="text-base text-center lg:text-xl lg:text-left p-5">
+                    <p class="p-5 text-center text-base lg:text-left lg:text-xl">
                       Group project with 1 week deadline, where I was assigned to be a
                       Team leader.
                     </p>
 
                     <h4
-                      class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5"
+                      class="text-center text-2xl text-stone-50 lg:p-5 lg:text-left lg:text-3xl"
                     >
                       Technologies Used:
                     </h4>
                     <div
-                      class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5"
+                      class="flex items-center justify-center gap-2 lg:items-start lg:justify-start lg:gap-5 lg:p-5"
                     >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg"
+                        class="rounded-lg bg-red-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >HTML</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg"
+                        class="rounded-lg bg-sky-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >CSS</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
+                        class="rounded-lg bg-amber-300 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >JavaScript</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
+                        class="rounded-lg bg-purple-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >Mobile First</span
                       >
                     </div>
@@ -397,7 +397,7 @@
                     <a
                       href="https://peterpoterek.github.io/goit-icecream-copy/"
                       target="_blank"
-                      class="self-center flex justify-center items-center w-[200px] h-[50px] bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/50 rounded-md cursor-pointer transform transition-transform hover:translate-y-[-5px] hover:scale-105"
+                      class="flex h-[50px] w-[200px] transform cursor-pointer items-center justify-center self-center rounded-md bg-indigo-500 text-white shadow-lg shadow-indigo-500/50 transition-transform hover:translate-y-[-5px] hover:scale-105 hover:bg-indigo-400"
                     >
                       Website
                       <svg
@@ -407,7 +407,7 @@
                         stroke-linejoin="round"
                         stroke-width="2"
                         viewBox="0 0 24 24"
-                        class="w-6 h-6 ml-2"
+                        class="ml-2 h-6 w-6"
                       >
                         <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                       </svg>
@@ -415,10 +415,10 @@
                     <a
                       href="https://github.com/PeterPoterek/goit-icecream-project"
                       target="_blank"
-                      class="self-center flex justify-center items-center w-[200px] h-[50px] bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/50 rounded-md cursor-pointer transform transition-transform hover:translate-y-[-5px] hover:scale-105"
+                      class="flex h-[50px] w-[200px] transform cursor-pointer items-center justify-center self-center rounded-md bg-indigo-500 text-white shadow-lg shadow-indigo-500/50 transition-transform hover:translate-y-[-5px] hover:scale-105 hover:bg-indigo-400"
                     >
                       Github
-                      <svg class="w-6 h-6 ml-2 fill-current">
+                      <svg class="ml-2 h-6 w-6 fill-current">
                         <use href="/icons.svg#icon-github"></use>
                       </svg>
                     </a>
@@ -427,44 +427,44 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="flex flex-col gap-5 bg-zinc-800 pb-[3rem] w-full h-full rounded-xl"
+                  class="flex h-full w-full flex-col gap-5 rounded-xl bg-zinc-800 pb-[3rem]"
                 >
-                  <h3 class="text-2xl lg:text-4xl text-stone-50 text-center pt-5">
+                  <h3 class="pt-5 text-center text-2xl text-stone-50 lg:text-4xl">
                     Family Business Website
                   </h3>
                   <img
-                    class="border-solid border-[3px] border-slate-950"
+                    class="border-[3px] border-solid border-slate-950"
                     src="/images/projects/tww.png"
                     alt="Family Business Website"
                   />
                   <div class="flex flex-col gap-5 md:gap-2">
-                    <p class="text-base text-center lg:text-xl lg:text-left p-5">
+                    <p class="p-5 text-center text-base lg:text-left lg:text-xl">
                       Portfolio website I made for my family business, it showcases
                       gallery with images.
                     </p>
 
                     <h4
-                      class="text-2xl text-center lg:text-left lg:text-3xl text-stone-50 lg:p-5"
+                      class="text-center text-2xl text-stone-50 lg:p-5 lg:text-left lg:text-3xl"
                     >
                       Technologies Used:
                     </h4>
                     <div
-                      class="flex justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-5 lg:p-5"
+                      class="flex items-center justify-center gap-2 lg:items-start lg:justify-start lg:gap-5 lg:p-5"
                     >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-red-600 p-2 rounded-lg"
+                        class="rounded-lg bg-red-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >HTML</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-sky-600 p-2 rounded-lg"
+                        class="rounded-lg bg-sky-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >CSS</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-amber-300 p-2 rounded-lg"
+                        class="rounded-lg bg-amber-300 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >JavaScript</span
                       >
                       <span
-                        class="text-sm lg:text-base text-zinc-50 font-bold shadow-lg shadow-zinc-950/50 bg-purple-600 p-2 rounded-lg"
+                        class="rounded-lg bg-purple-600 p-2 text-sm font-bold text-zinc-50 shadow-lg shadow-zinc-950/50 lg:text-base"
                         >Mobile First</span
                       >
                     </div>
@@ -473,7 +473,7 @@
                     <a
                       href="https://technologiawykonaniawnetrz.pl/"
                       target="_blank"
-                      class="self-center flex justify-center items-center w-[200px] h-[50px] bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/50 rounded-md cursor-pointer transform transition-transform hover:translate-y-[-5px] hover:scale-105"
+                      class="flex h-[50px] w-[200px] transform cursor-pointer items-center justify-center self-center rounded-md bg-indigo-500 text-white shadow-lg shadow-indigo-500/50 transition-transform hover:translate-y-[-5px] hover:scale-105 hover:bg-indigo-400"
                     >
                       Website
                       <svg
@@ -483,7 +483,7 @@
                         stroke-linejoin="round"
                         stroke-width="2"
                         viewBox="0 0 24 24"
-                        class="w-6 h-6 ml-2"
+                        class="ml-2 h-6 w-6"
                       >
                         <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                       </svg>
@@ -491,10 +491,10 @@
                     <a
                       href="https://github.com/PeterPoterek/technologia-wykonania-wnetrz"
                       target="_blank"
-                      class="self-center flex justify-center items-center w-[200px] h-[50px] bg-indigo-500 text-white hover:bg-indigo-400 shadow-lg shadow-indigo-500/50 rounded-md cursor-pointer transform transition-transform hover:translate-y-[-5px] hover:scale-105"
+                      class="flex h-[50px] w-[200px] transform cursor-pointer items-center justify-center self-center rounded-md bg-indigo-500 text-white shadow-lg shadow-indigo-500/50 transition-transform hover:translate-y-[-5px] hover:scale-105 hover:bg-indigo-400"
                     >
                       Github
-                      <svg class="w-6 h-6 ml-2 fill-current">
+                      <svg class="ml-2 h-6 w-6 fill-current">
                         <use href="/icons.svg#icon-github"></use>
                       </svg>
                     </a>
@@ -514,52 +514,52 @@
         id="contact"
         class="flex justify-center pb-[5rem] md:pb-[15rem]"
       >
-        <div class="flex flex-col md:max-w-2xl lg:max-w-4xl gap-10">
-          <h2 class="text-3xl text-center lg:text-left lg:text-5xl text-stone-50">
+        <div class="flex flex-col gap-10 md:max-w-2xl lg:max-w-4xl">
+          <h2 class="text-center text-3xl text-stone-50 lg:text-left lg:text-5xl">
             Contact 📱
           </h2>
           <ul
-            class="flex flex-col justify-between md:flex-row flex-wrap gap-10 lg:justify-between"
+            class="flex flex-col flex-wrap justify-between gap-10 md:flex-row lg:justify-between"
           >
             <div class="flex items-center gap-5 md:gap-2">
-              <svg class="w-10 h-10 fill-current text-indigo-400">
+              <svg class="h-10 w-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-email"></use>
               </svg>
 
               <a
                 href="mailto:peterpoterek0@gmail.com"
-                class="text-xl md:text-3xl lg:text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="text-xl transition duration-300 after:absolute after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full md:text-3xl lg:text-4xl"
                 >peterpoterek0@gmail.com</a
               >
             </div>
             <div class="flex items-center gap-5 md:gap-2">
-              <svg class="w-10 h-10 fill-current text-indigo-400">
+              <svg class="h-10 w-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-github"></use>
               </svg>
               <a
                 href="https://github.com/PeterPoterek"
                 target="_blank"
-                class="text-xl md:text-3xl lg:text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="text-xl transition duration-300 after:absolute after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full md:text-3xl lg:text-4xl"
                 >PeterPoterek</a
               >
             </div>
             <div class="flex items-center gap-5 md:gap-2">
-              <svg class="w-10 h-10 fill-current text-indigo-400">
+              <svg class="h-10 w-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-linkedin"></use>
               </svg>
               <a
                 href="https://www.linkedin.com/in/piotr-poterek/"
                 target="_blank"
-                class="text-xl md:text-3xl lg:text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="text-xl transition duration-300 after:absolute after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full md:text-3xl lg:text-4xl"
                 >Piotr Poterek</a
               >
             </div>
             <div class="flex items-center gap-5 md:gap-2">
-              <svg class="w-10 h-10 fill-current text-indigo-400">
+              <svg class="h-10 w-10 fill-current text-indigo-400">
                 <use href="/icons.svg#icon-discord"></use>
               </svg>
               <a
-                class="text-xl md:text-3xl lg:text-4xl after:bg-indigo-400 after:absolute hover:after:translate-x-full after:duration-300 hover:text-indigo-100 transition duration-300"
+                class="text-xl transition duration-300 after:absolute after:bg-indigo-400 after:duration-300 hover:text-indigo-100 hover:after:translate-x-full md:text-3xl lg:text-4xl"
                 >living_failure</a
               >
             </div>
@@ -568,11 +568,11 @@
       </section>
       <div
         id="scrollToTopBtn"
-        class="w-[50px] h-[50px] fixed bottom-[2.5rem] right-5 lg:right-[10rem] rounded-3xl flex justify-center items-center"
+        class="fixed bottom-[2.5rem] right-5 flex h-[50px] w-[50px] items-center justify-center rounded-3xl lg:right-[10rem]"
       >
         <a href="#">
           <svg
-            class="w-10 h-10 fill-current hover:scale-[1.3] transition-transform text-white hover:text-indigo-400"
+            class="h-10 w-10 fill-current text-white transition-transform hover:scale-[1.3] hover:text-indigo-400"
           >
             <use href="/icons.svg#icon-arrow-up"></use>
           </svg>
